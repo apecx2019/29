@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Zellaly Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div class="top_nav">
+        <div class="container top_nav_container">
+            <div class="top_nav_wrapper">
+                <p class="tap_nav_p" style="color: white;">
+                    รวมโปรโมชั่นลดกระหน่ำ 12.12.2023 ลดสูงสุด 50% - OFF 50%!
+                </p>
+            </div>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="container nav_container">
+            <a href="./index.html" class="nav_logo">ZELLALY</a>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="./index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="./promotion.html" class="nav_link">Promotion</a></li>
+                
+                
+            </ul>
+            <div class="nav_items">
+                <form action="" class="nav_form">
+                    <input type="text" class="nav_input" placeholder="ค้นหาสินค้า">
+                    <img src="./image/Vector.png" alt="" class="nav_search">
+                </form>
+                <a href="./cart.html">
+                  <img width="32px" height="32px" src="./image/Cart1.png" alt="" class="nav_cart">
+                  </a>
+                  <a href="./profile.html">
+                    <img width="32px" height="32px"  src="./image/account.png" alt="" class="nav_person">
+                  </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="auth_container">
+          <div class="auth_img">
+            <img src="./image/login.logo2.jpg" alt="" class="auth_image" />
+          </div>
+          <div class="auth_content">
+            <form action="" class="auth_form">
+              <h2 class="form_title">Create your account</h2>
+              <div class="form_group">
+                <input type="text" placeholder="Name" class="form_input" required/>
+              </div>
+              <div class="form_group">
+                <input type="text" placeholder="Username" class="form_input" required/>
+              </div>
+              <div class="form_group">
+                <input type="text" placeholder="Phone number" class="form_input" required/>
+              </div>
+              <div class="form_group">
+                <input type="text" placeholder="Address" class="form_input" required/>
+              </div>
+              <div class="form_group">
+                <input type="email" placeholder="Email" class="form_input" required/>
+              </div>
+              <div class="form_group form_pass">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form_input" required/>
+              </div>
+              <div class="form_group">
+                <button  onclick="openpopup()" class="form_btn">
+                  Create Account
+                </button>
+              </div>
+              <div class="popup" id="popup">
+                <img src="./image/check.png" >
+                <h2>Thank You!</h2>
+                <p>Your account has been register successfully</p>
+                <a href="./login.html">
+                  <button  type="button">Login</button>
+                </a>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <script>
+          let popup = document.getElementById("popup");
+          function openpopup(){
+            popup.classList.add("open-popup");
+          }
+          // function closepopup(){
+          //   popup.classList.remove("open-popup");
+          // }
+        </script>
+      </section>
+      
+      
+    
+
+</body>
+</html>
+
